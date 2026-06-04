@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Click Open Website</title>
+    <style>
+        /* Improves user experience by showing the image is clickable */
+        .clickable-image {
+            transition: transform 0.2s ease, opacity 0.2s ease;
+            display: inline-block;
+        }
+        .clickable-image:hover {
+            transform: scale(1.02);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Wrap the image in an anchor tag. Use rel="noopener" for security with target="_blank" -->
+    <a href="https://www.google.com" target="_blank" rel="noopener" class="clickable-image">
+        <img src="image.jpg" alt="Visit Google" width="300">
+    </a>
+</body>
+</html>
