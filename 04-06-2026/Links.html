@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Image Click Open Website</title>
+    <title>Links</title>
     <style>
         /* Improves user experience by showing the image is clickable */
         .clickable-image {
@@ -12,12 +12,32 @@
             transform: scale(1.02);
             opacity: 0.9;
         }
+        .links-list {
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .links-list a {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #0073e6;
+            border-radius: 4px;
+        }
+        .links-list a:hover {
+            background-color: #005bb5;
+        }
     </style>
 </head>
 <body>
-    <!-- Wrap the image in an anchor tag. Use rel="noopener" for security with target="_blank" -->
-    <a href="https://www.google.com" target="_blank" rel="noopener" class="clickable-image">
-        <img src="image.jpg" alt="Visit Google" width="300">
-    </a>
+    
+
+    <div class="links-list">
+        <a href="https://www.google.com" target="_blank" rel="noopener">Google</a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+    </div>
 </body>
 </html>
