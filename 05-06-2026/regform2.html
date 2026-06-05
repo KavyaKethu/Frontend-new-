@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Registration Form</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+}
+
+.container{
+    width:900px;
+    margin:20px auto;
+}
+
+h1{
+    text-align:center;
+    color:#5b4db2;
+    text-decoration:underline;
+}
+
+.form-box{
+    background:#5b54c8;
+    color:white;
+    padding:25px;
+    border:2px solid #333;
+}
+
+table{
+    width:100%;
+    border-spacing:10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select{
+    padding:5px;
+}
+
+textarea{
+    width:220px;
+    height:70px;
+}
+
+.note{
+    font-size:12px;
+}
+
+.qual-table{
+    width:100%;
+    margin-top:10px;
+    border-collapse:collapse;
+}
+
+.qual-table th,
+.qual-table td{
+    border:1px solid white;
+    padding:5px;
+    text-align:center;
+}
+
+.qual-table input{
+    width:95%;
+}
+
+.buttons{
+    text-align:center;
+    margin-top:20px;
+}
+
+button{
+    padding:5px 15px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>STUDENT REGISTRATION FORM</h1>
+
+<div class="form-box">
+
+<form>
+
+<table>
+
+<tr>
+<td>FIRST NAME</td>
+<td>
+<input type="text">
+<span class="note">(max 30 characters a-z and A-Z)</span>
+</td>
+</tr>
+
+<tr>
+<td>LAST NAME</td>
+<td>
+<input type="text">
+<span class="note">(max 30 characters a-z and A-Z)</span>
+</td>
+</tr>
+
+<tr>
+<td>DATE OF BIRTH</td>
+<td>
+<select>
+<option>Day</option>
+</select>
+
+<select>
+<option>Month</option>
+</select>
+
+<select>
+<option>Year</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>EMAIL ID</td>
+<td><input type="email"></td>
+</tr>
+
+<tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text">
+<span class="note">(10 digit number)</span>
+</td>
+</tr>
+
+<tr>
+<td>GENDER</td>
+<td>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+</td>
+</tr>
+
+<tr>
+<td>ADDRESS</td>
+<td>
+<textarea></textarea>
+</td>
+</tr>
+
+<tr>
+<td>CITY</td>
+<td>
+<input type="text">
+<span class="note">(max 30 characters a-z and A-Z)</span>
+</td>
+</tr>
+
+<tr>
+<td>PIN CODE</td>
+<td>
+<input type="text">
+<span class="note">(6 digit number)</span>
+</td>
+</tr>
+
+<tr>
+<td>STATE</td>
+<td>
+<input type="text">
+<span class="note">(max 30 characters a-z and A-Z)</span>
+</td>
+</tr>
+
+<tr>
+<td>COUNTRY</td>
+<td><input type="text" value="India"></td>
+</tr>
+
+<tr>
+<td>HOBBIES</td>
+<td>
+<input type="checkbox"> Drawing
+<input type="checkbox"> Singing
+<input type="checkbox"> Dancing
+<input type="checkbox"> Sketching
+<br><br>
+<input type="checkbox"> Others
+<input type="text">
+</td>
+</tr>
+
+<tr>
+<td valign="top">QUALIFICATION</td>
+<td>
+
+<table class="qual-table">
+
+<tr>
+<th>Sl.No.</th>
+<th>Examination</th>
+<th>Board</th>
+<th>Percentage</th>
+<th>Year of Passing</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Masters</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+
+</table>
+
+</td>
+</tr>
+
+<tr>
+<td>COURSES APPLIED FOR</td>
+<td>
+<input type="radio" name="course"> BCA
+<input type="radio" name="course"> B.Com
+<input type="radio" name="course"> B.Sc
+<input type="radio" name="course"> B.A
+</td>
+</tr>
+
+</table>
+
+<div class="buttons">
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</div>
+
+</form>
+
+</div>
+</div>
+
+</body>
+</html>
