@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f8fb;
+      color: #1f2a37;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .registration-card {
+      width: min(520px, 100%);
+      background: #ffffff;
+      border: 1px solid #d8e0ed;
+      border-radius: 16px;
+      padding: 28px;
+    }
+
+    .registration-card h1 {
+      margin: 0 0 12px;
+      font-size: 1.9rem;
+    }
+
+    .registration-card p {
+      margin: 0 0 24px;
+      color: #5f6f88;
+      line-height: 1.6;
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .form-row {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    label {
+      font-size: 0.95rem;
+      color: #5f6f88;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #d8e0ed;
+      border-radius: 12px;
+      background: #f9fbff;
+      font-size: 1rem;
+      color: #1f2a37;
+    }
+
+    input:focus,
+    select:focus {
+      outline: none;
+      border-color: #4f7cf3;
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .primary-btn {
+      border: none;
+      background: #4f7cf3;
+      color: #ffffff;
+      padding: 14px 16px;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .primary-btn:hover {
+      opacity: 0.95;
+    }
+
+    @media (max-width: 560px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="From">
+    <h1>Create your account</h1>
+    <p>Join now to manage your profile, access exclusive content, and stay updated with the latest features.</p>
+
+    <form class="form-grid" method="get">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="John" required />
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required />
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select gender</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="nonbinary">Non-binary</option>
+          <option value="preferNotToSay">Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="primary-btn">Submit</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
